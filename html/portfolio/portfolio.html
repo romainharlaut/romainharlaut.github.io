@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Portfolio – Romain HARLAUT</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
     <header>
-        <h1>Portfolio de Romain HARLAUT</h1>
-        <p>BUT Informatique – Année 2024-2025</p>
+        <h1>Portfolio – Romain HARLAUT</h1>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../index.html" class="menu-item">Accueil</a></li>
+                <li><a href="portfolio.html" class="menu-item">Portfolio</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="sae1_02.html">SAÉ 1.02 : Jeu ludo-pédagogique</a></li>
-            <li><a href="sae1_03-2_03.html">SAÉ 1.03 + 2.03 : Installation d’une machine virtuelle</a></li>
-            <li><a href="sae1_04-2_04.html">SAÉ 1.04 + 2.04 : Introduction aux bases de données</a></li>
-            <li><a href="sae1_05-1_06.html">SAÉ 1.05-1.06 : Plateforme de covoiturage</a></li>
-            <li><a href="sae2_02.html">SAÉ 2.02 : Exploration algorithmique</a></li>
-            <li><a href="sae2_05.html">SAÉ 2.05 : Gestion de projet</a></li>
-            <li><a href="sae2_06.html">SAÉ 2.06 : Travail en équipe</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section class="presentation">
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Je m'appelle <strong>Romain HARLAUT</strong>, étudiant en BUT Informatique.
+                Ce portfolio présente les projets réalisés dans le cadre
+                de mes SAÉ, illustrant mes compétences techniques et savoir-être acquis au cours de l'année.</p>
+        </section>
+
+        <section class="liste-projets">
+            <h2>Mes projets</h2>
+            <div class="projets-container">
+                <article class="projet">
+                    <a href="sae1_02.html">
+                        <img src="../../img/sae/sae1_02.jpg" alt="SAÉ 1.02 – Jeu ludo-pédagogique">
+                        <h3>SAÉ 1.02 – Jeu ludo-pédagogique</h3>
+                    </a>
+                    <p>MathQuest est un jeu éducatif mêlant aventure et calcul mental.</p>
+                </article>
+
+                <article class="projet">
+                    <a href="sae1_03-2_03.html">
+                        <img src="../../img/sae/sae1_03_2_03.jpg" alt="SAÉ 1.03 + 2.03 – Installation VM">
+                        <h3>SAÉ 1.03 + 2.03 – Installation d’une machine virtuelle</h3>
+                    </a>
+                    <p>Installation et configuration de Debian 12 sur VirtualBox.</p>
+                </article>
+
+                <article class="projet">
+                    <a href="sae1_04-2_04.html">
+                        <img src="../../img/sae/sae1_04_2_04.jpg" alt="SAÉ 1.04 + 2.04 – Bases de données">
+                        <h3>SAÉ 1.04 + 2.04 – Introduction aux bases de données</h3>
+                    </a>
+                    <p>Modélisation et manipulation de bases de données relationnelles avec SQL et PostgreSQL.</p>
+                </article>
+
+                <article class="projet">
+                    <a href="sae1_05-1_06.html">
+                        <img src="../../img/sae/sae1_05-1_06.jpg" alt="SAÉ 1.05-1.06 – Plateforme de covoiturage">
+                        <h3>SAÉ 1.05-1.06 – Plateforme de covoiturage en ligne</h3>
+                    </a>
+                    <p>Développement d’un service web facilitant les déplacements partagés.</p>
+                </article>
+
+                <article class="projet">
+                    <a href="sae2_02.html">
+                        <img src="../../img/sae/sae2_02.jpg" alt="SAÉ 2.02 – Exploration algorithmique">
+                        <h3>SAÉ 2.02 – Exploration algorithmique</h3>
+                    </a>
+                    <p>Outil Java pour l’appariement optimal de participants à des séjours linguistiques.</p>
+                </article>
+
+                <article class="projet">
+                    <a href="sae2_05.html">
+                        <img src="../../img/sae/sae2_05.jpg" alt="SAÉ 2.05 – Gestion de projet DomOS">
+                        <h3>SAÉ 2.05 – Gestion de projet</h3>
+                    </a>
+                    <p>Développement de l’application mobile DomOS avec gestion de projet complète.</p>
+                </article>
+
+                <article class="projet">
+                    <a href="sae2_06.html">
+                        <img src="../../img/sae/sae2_06.jpg" alt="SAÉ 2.06 – Travail en équipe">
+                        <h3>SAÉ 2.06 – Travail en équipe</h3>
+                    </a>
+                    <p>Vulgarisation informatique : création d’une vidéo pédagogique sur l’évolution des supports de
+                        stockage.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p class="footer-texte"><a href="../index.html" class="retour">← Retour à l’accueil</a></p>
         <p>© 2025 – Romain HARLAUT</p>
     </footer>
 </body>
+
 </html>

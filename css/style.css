@@ -39,7 +39,7 @@ nav a:hover {
 
 main {
     padding: 2em;
-    max-width: 900px;
+    max-width: 75%;
     margin: auto;
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -88,4 +88,29 @@ footer {
     font-style: italic;
     color: #555;
 }
+
+.projets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.projet {
+    width: 300px;
+    text-align: center;
+}
+
+/* Cadre fixe sans déformation */
+.projet img {
+    width: 300px;           /* largeur du cadre */
+    height: 200px;          /* hauteur du cadre */
+    object-fit: contain;    /* affiche toute l’image sans la couper */
+    background-color: #f0f0f0; /* fond gris clair pour remplir les bandes */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 0.5em;
+}
+
+
 
