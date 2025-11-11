@@ -42,7 +42,7 @@ main {
     max-width: 75%;
     margin: auto;
     background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -80,7 +80,7 @@ footer {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .visuel-projet figcaption {
@@ -89,11 +89,69 @@ footer {
     color: #555;
 }
 
+/* ----- MENU DÉROULANT ----- */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #3e4a89;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.menu-item:hover {
+    background-color: #5a6cc5;
+    border-radius: 10px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #3e4a89;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    z-index: 1000;
+}
+
+.submenu li a {
+    padding: 0.8em 1em;
+    display: block;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #5a6cc5;
+    border-radius: 10px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* ----- PROJETS ----- */
+
 .projets-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
+    margin-top: 2em;
 }
 
 .projet {
@@ -101,16 +159,32 @@ footer {
     text-align: center;
 }
 
-/* Cadre fixe sans déformation */
-.projet img {
-    width: 300px;           /* largeur du cadre */
-    height: 200px;          /* hauteur du cadre */
-    object-fit: contain;    /* affiche toute l’image sans la couper */
-    background-color: #f0f0f0; /* fond gris clair pour remplir les bandes */
+.projet h3 {
+    background-color: #2b3a67;
+    color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-bottom: 0.5em;
+    text-decoration: none;
 }
 
+.projet h3:hover {
+    background-color: #5a6cc5;
+    border-radius: 10px;
+}
 
+.projet img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5em;
+    transition: all 0.3s ease;
+}
 
+/* Effet au survol */
+.projet img:hover {
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transform: scale(1.02);
+}
