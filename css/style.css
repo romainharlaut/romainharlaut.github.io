@@ -95,8 +95,6 @@ footer {
     color: #555;
 }
 
-/* ----- MENU DÉROULANT ----- */
-
 .menu {
     list-style: none;
     padding: 0;
@@ -149,8 +147,6 @@ footer {
     display: block;
 }
 
-/* ----- PROJETS ----- */
-
 .projets-container {
     display: flex;
     flex-wrap: wrap;
@@ -186,9 +182,20 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Effet au survol */
 .projet img:hover {
     border-radius: 30px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     transform: scale(1.02);
+}
+
+.git {
+    color: #fff;
+    background-color: #3e4a89;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.git:hover {
+    background-color: #5c6cb0;
 }
