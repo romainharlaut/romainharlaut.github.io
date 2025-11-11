@@ -22,19 +22,19 @@
     <main>
         <section class="formulaire">
             <h2>Bienvenue sur mon formulaire de contact</h2>
-            <form action="mailto" method="post">
+            <form id="contact-form">
                 <ul>
                     <li>
-                        <label for="non">Sujet :</label>
-                        <input type="text" id="non" name="name" required>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="user_name" required>
                     </li>
                     <li>
                         <label for="mail">Email :</label>
-                        <input type="email" id="mail" name="mail" required>
+                        <input type="email" id="mail" name="user_email" required>
                     </li>
                     <li>
                         <label for="sujet">Sujet :</label>
-                        <input type="text" id="sujet" name="sujet" required>
+                        <input type="text" id="sujet" name="subject" required>
                     </li>
                     <li>
                         <label for="message">Message :</label>
@@ -43,6 +43,22 @@
                 </ul>
                 <button type="submit">Envoyer</button>
             </form>
+
+            <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+            <script>
+                emailjs.init("nQVWtKnhqyfFHx-bQ");
+
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_2cyfkjs', 'template_i5r735q', this)
+                        .then(function () {
+                            alert('Message envoyé ! Merci.');
+                            document.getElementById('contact-form').reset();
+                        }, function (error) {
+                            alert('Erreur : ' + JSON.stringify(error));
+                        });
+                });
+            </script>
 
 
         </section>
