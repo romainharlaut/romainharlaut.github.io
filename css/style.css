@@ -1,3 +1,4 @@
+/* ===== Global ===== */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f7fa;
@@ -6,96 +7,28 @@ body {
     padding: 0;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-header {
-    background-color: #2b3a67;
-    color: white;
-    text-align: center;
-    padding: 1.5em;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #3e4a89;
-    margin: 0;
-    padding: 0.5em;
-}
-
-nav ul li {
-    margin: 0.5em 1em;
-}
-
-nav a {
-    color: white;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #d0d3ff;
-}
-
-main {
-    padding: 2em;
-    max-width: 75%;
-    margin: auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 h2 {
     color: #2b3a67;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
+/* ===== Header & Footer ===== */
+header, footer {
     background-color: #2b3a67;
     color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+footer {
     margin-top: 2em;
 }
 
-.retour {
-    color: #fff;
-    background-color: #3e4a89;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    font-size: 0.9em;
-}
-
-.retour:hover {
-    background-color: #5c6cb0;
-}
-
-.visuel-projet {
-    text-align: center;
-    margin: 2em 0;
-}
-
-.visuel-projet img.image-sae {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.visuel-projet figcaption {
-    margin-top: 0.5em;
-    font-style: italic;
-    color: #555;
-}
-
-.menu {
+/* ===== Navigation ===== */
+nav ul, .menu {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -104,19 +37,31 @@ footer {
     background-color: #3e4a89;
 }
 
-.menu > li {
-    position: relative;
+nav ul {
+    flex-wrap: wrap;
+    padding: 0.5em;
 }
 
-.menu-item {
+nav ul li {
+    margin: 0.5em 1em;
+}
+
+nav a, .menu-item, .submenu li a {
     color: white;
-    padding: 1em;
+    font-weight: bold;
     display: block;
+    padding: 1em;
 }
 
-.menu-item:hover {
+
+
+.menu-item:hover, .submenu li a:hover {
     background-color: #5a6cc5;
     border-radius: 10px;
+}
+
+.menu > li {
+    position: relative;
 }
 
 .submenu {
@@ -132,19 +77,59 @@ footer {
     z-index: 1000;
 }
 
-.submenu li a {
-    padding: 0.8em 1em;
+.dropdown:hover .submenu {
     display: block;
-    color: white;
 }
 
-.submenu li a:hover {
-    background-color: #5a6cc5;
+/* ===== Main Content ===== */
+main {
+    padding: 2em;
+    max-width: 75%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.dropdown:hover .submenu {
-    display: block;
+/* ===== Boutons de retour ===== */
+.retour {
+    color: #fff;
+    background-color: #3e4a89;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.retour:hover {
+    background-color: #5c6cb0;
+}
+
+/* ===== Portfolio et visuels ===== */
+.visuel-projet, .mes-liens .lien-img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    gap: 1em;
+}
+
+.visuel-projet img.image-sae, .projet img {
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 0.5em;
+    background-color: #f0f0f0;
+}
+
+.visuel-projet figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #555;
 }
 
 .projets-container {
@@ -164,42 +149,22 @@ footer {
     background-color: #2b3a67;
     color: white;
     border-radius: 10px;
+    padding: 0.5em;
+    transition: background-color 0.3s ease;
 }
 
 .projet h3:hover {
     background-color: #5a6cc5;
-    border-radius: 10px;
-}
-
-.projet img {
-    width: 300px;
-    height: 200px;
-    object-fit: contain;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 0.5em;
-    transition: all 0.3s ease;
 }
 
 .projet img:hover {
-    border-radius: 30px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
+    background-color: #f0f0f0; /* reste blanc au survol */
 }
 
-.git {
-    color: #fff;
-    background-color: #3e4a89;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    font-size: 0.9em;
-}
-
-.git:hover {
-    background-color: #5c6cb0;
-}
-
+/* ===== Formulaire ===== */
 form {
     max-width: 600px;
     margin: 2em auto;
@@ -273,16 +238,31 @@ form button:active {
     transform: scale(0.98);
 }
 
-.success-message {
-    color: #2b3a67;
+.success-message, .error-message {
     text-align: center;
     font-weight: bold;
     margin-top: 1em;
 }
 
+.success-message {
+    color: #2b3a67;
+}
+
 .error-message {
     color: #c0392b;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 1em;
+}
+
+/* ===== Liens externes ===== */
+.mes-liens .lien-externe {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.mes-liens .lien-externe:hover {
+    transform: scale(1.1);
+}
+
+.icone-lien {
+    width: 50px;
+    height: 50px;
 }
