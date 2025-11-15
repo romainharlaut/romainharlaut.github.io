@@ -29,6 +29,7 @@ nav ul {
     background-color: #3e4a89;
     margin: 0;
     padding: 0.5em;
+    border-radius: 10px;
 }
 
 nav ul li {
@@ -47,7 +48,7 @@ nav a:hover {
 main {
     padding: 2em;
     max-width: 75%;
-    margin: auto;
+    margin: 3em auto;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -305,4 +306,53 @@ form button:active {
 .icone-lien {
     width: 50px; 
     height: 50px;
+}
+
+.competences-section {
+    max-width: 75%;
+    margin: 2em auto;
+    padding: 2em;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.competences-section h2 {
+    color: #2b3a67;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #2b3a67;
+    display: inline-block;
+    padding-bottom: 0.3em;
+}
+
+.skill-category {
+    margin-bottom: 2em;
+}
+
+.skill-category h3 {
+    color: #2b3a67;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #f9f9ff;
+    padding: 0.6em 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
