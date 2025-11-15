@@ -181,12 +181,13 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 0.5em;
     transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
 }
 
 .projet img:hover {
-    border-radius: 30px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     transform: scale(1.02);
+    border: 2px solid #3e4a89;
 }
 
 .git {
@@ -291,21 +292,25 @@ form button:active {
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 5em;
 }
 
 .mes-liens .lien-externe {
     display: inline-block;
     transition: transform 0.3s;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+    padding: 5px;
 }
 
 .mes-liens .lien-externe:hover {
     transform: scale(1.1);
+    border: 2px solid #3e4a89;
 }
 
 .icone-lien {
-    width: 50px; 
-    height: 50px;
+    width: 60px; 
+    height: 60px;
 }
 
 .competences-section {
@@ -350,9 +355,22 @@ form button:active {
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 0.5em;   
+    border: 2px solid #3e4a89;
+    width: 120px; 
+    height: 110px;
 }
 
 .skill-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.skill-item img {
+    width: 70px; 
+    height: 70px;
+    object-fit: contain;
 }
