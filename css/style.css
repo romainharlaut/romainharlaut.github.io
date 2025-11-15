@@ -374,3 +374,58 @@ form button:active {
     height: 70px;
     object-fit: contain;
 }
+
+.competence-tech,
+.competence-nontech {
+    max-width: 75%;
+    margin: 2em auto;
+    padding: 2em;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border: 2px solid #3e4a89;
+}
+
+.competence-tech h2,
+.competence-nontech h2 {
+    color: #2b3a67;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #2b3a67;
+    display: inline-block;
+    padding-bottom: 0.3em;
+}
+
+.competence-tech ul,
+.competence-nontech ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; 
+    justify-content: flex-start;
+    padding-left: 0;
+    list-style: none;
+}
+
+.competence-tech li,
+.competence-nontech li {
+    background-color: #f9f9ff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.competence-tech li:hover,
+.competence-nontech li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.competence-tech li ,
+.competence-nontech li {
+    border-left: 5px solid #2b3a67;
+}
+
