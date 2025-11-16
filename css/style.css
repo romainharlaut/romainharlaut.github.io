@@ -50,7 +50,7 @@ main {
     max-width: 75%;
     margin: 3em auto;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
     border-radius: 10px;
 }
 
@@ -87,7 +87,7 @@ footer {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
 }
 
 .visuel-projet figcaption {
@@ -178,14 +178,14 @@ footer {
     object-fit: contain;
     background-color: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     margin-bottom: 0.5em;
     transition: all 0.3s ease;
     border: 2px solid #f0f0f0;
 }
 
 .projet img:hover {
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 30%);
     transform: scale(1.02);
     border: 2px solid #3e4a89;
 }
@@ -208,7 +208,7 @@ form {
     padding: 2em;
     background-color: #f9f9ff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
 }
 
 form ul {
@@ -244,7 +244,7 @@ form textarea {
 form input:focus,
 form textarea:focus {
     border-color: #3e4a89;
-    box-shadow: 0 0 5px rgba(62, 74, 137, 0.5);
+    box-shadow: 0 0 5px rgb(62 74 137 / 50%);
     outline: none;
 }
 
@@ -320,7 +320,7 @@ form button:active {
     background-color: #f9f9ff;
     padding: 0.6em 1em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: default;
@@ -335,7 +335,7 @@ form button:active {
 
 .skill-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
 }
 
 .skill-item img {
@@ -350,7 +350,7 @@ form button:active {
     margin: 2em auto;
     padding: 2em;
     background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
     border-radius: 10px;
     border: 2px solid #3e4a89;
 }
@@ -379,7 +379,7 @@ form button:active {
     background-color: #f9f9ff;
     padding: 1em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: default;
@@ -390,7 +390,7 @@ form button:active {
 .competence-tech li:hover,
 .competence-nontech li:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
 }
 
 .competence-tech li ,

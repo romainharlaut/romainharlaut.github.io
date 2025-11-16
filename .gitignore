@@ -1,4 +1,3 @@
-
 node_modules/
 
 npm-debug.log*
@@ -17,3 +16,6 @@ css/clean/
 package.json
 package-lock.json
 cleancss.js
+
+.stylelintrc.json
+
