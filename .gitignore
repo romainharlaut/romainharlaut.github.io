@@ -1,20 +1,19 @@
-# Node modules
+
 node_modules/
 
-# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment files
 .env
 
-# Dossier de build / output
 /dist
 /build
 
-# PurgeCSS output (si tu génères du CSS nettoyé dans un dossier)
 css/clean/
 
-# VS Code settings
 .vscode/
+
+package.json
+package-lock.json
+cleancss.js

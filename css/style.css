@@ -274,20 +274,6 @@ form button:active {
     transform: scale(0.98);
 }
 
-.success-message {
-    color: #2b3a67;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
-.error-message {
-    color: #c0392b;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
 .mes-liens .lien-img {
     text-align: center;
     display: flex;
@@ -311,23 +297,6 @@ form button:active {
 .icone-lien {
     width: 60px; 
     height: 60px;
-}
-
-.competences-section {
-    max-width: 75%;
-    margin: 2em auto;
-    padding: 2em;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-
-.competences-section h2 {
-    color: #2b3a67;
-    margin-bottom: 1em;
-    border-bottom: 2px solid #2b3a67;
-    display: inline-block;
-    padding-bottom: 0.3em;
 }
 
 .skill-category {
