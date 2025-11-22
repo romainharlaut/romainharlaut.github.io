@@ -79,8 +79,10 @@ footer {
 }
 
 .visuel-projet {
-    text-align: center;
     margin: 2em 0;
+}
+.visuel-projet figure{
+    text-align: center;
 }
 
 .visuel-projet img.image-sae {
@@ -165,6 +167,7 @@ footer {
     background-color: #2b3a67;
     color: white;
     border-radius: 10px;
+    padding: 0.5em 1em;
 }
 
 .projet h3:hover {
@@ -191,17 +194,11 @@ footer {
 }
 
 .git {
-    color: #fff;
-    background-color: #3e4a89;
+    color: #2b3a67;
+    text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 5px;
-    font-size: 0.9em;
 }
-
-.git:hover {
-    background-color: #5c6cb0;
-}
-
 form {
     max-width: 600px;
     margin: 2em auto;
@@ -375,7 +372,9 @@ form button:active {
 }
 
 .competence-tech li,
-.competence-nontech li {
+.competence-nontech li,
+.lien-projet p {
+    color: #2b3a67;
     background-color: #f9f9ff;
     padding: 1em;
     border-radius: 10px;
@@ -385,16 +384,13 @@ form button:active {
     cursor: default;
     flex: 1 1 200px;
     max-width: 250px;
+    border-left: 5px solid #2b3a67;
 }
 
 .competence-tech li:hover,
-.competence-nontech li:hover {
+.competence-nontech li:hover,
+.lien-projet p:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
-}
-
-.competence-tech li ,
-.competence-nontech li {
-    border-left: 5px solid #2b3a67;
 }
 
