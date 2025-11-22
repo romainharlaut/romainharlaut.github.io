@@ -81,7 +81,8 @@ footer {
 .visuel-projet {
     margin: 2em 0;
 }
-.visuel-projet figure{
+
+.visuel-projet figure {
     text-align: center;
 }
 
@@ -107,7 +108,7 @@ footer {
     background-color: #3e4a89;
 }
 
-.menu > li {
+.menu>li {
     position: relative;
 }
 
@@ -199,6 +200,7 @@ footer {
     padding: 0.5em 1em;
     border-radius: 5px;
 }
+
 form {
     max-width: 600px;
     margin: 2em auto;
@@ -272,7 +274,7 @@ form button:active {
 }
 
 .mes-liens .lien-img,
-.mes-doc .lien-doc{
+.mes-doc .lien-doc {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -280,7 +282,7 @@ form button:active {
 }
 
 .mes-liens .lien-externe,
-.mes-doc .doc-externe{
+.mes-doc .doc-externe {
     display: inline-block;
     transition: transform 0.3s;
     border-radius: 10px;
@@ -296,7 +298,7 @@ form button:active {
 
 .icone-lien,
 .icone-doc {
-    width: 60px; 
+    width: 60px;
     height: 60px;
 }
 
@@ -327,10 +329,10 @@ form button:active {
     cursor: default;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    gap: 0.5em;   
+    align-items: center;
+    gap: 0.5em;
     border: 2px solid #3e4a89;
-    width: 120px; 
+    width: 120px;
     height: 110px;
 }
 
@@ -340,7 +342,7 @@ form button:active {
 }
 
 .skill-item img {
-    width: 70px; 
+    width: 70px;
     height: 70px;
     object-fit: contain;
 }
@@ -369,7 +371,7 @@ form button:active {
 .competence-nontech ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em; 
+    gap: 1em;
     justify-content: flex-start;
     padding-left: 0;
     list-style: none;
@@ -397,4 +399,54 @@ form button:active {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
 }
+
+.project-card {
+    width: 300px;
+    background: #ffffff;
+    padding: 1.5em;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #3e4a89;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgb(0 0 0 / 25%);
+}
+
+.project-card h3 {
+    background-color: #2b3a67;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-bottom: 0.8em;
+    transition: background-color 0.3s;
+}
+
+.project-card p {
+    color: #333;
+    margin-bottom: 1em;
+    min-height: 50px;
+}
+
+.project-card a {
+    display: block;
+    margin: 0.4em auto;
+    padding: 0.6em 1em;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: #3e4a89;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    background-color: #5c6cb0;
+    border-color: #5c6cb0;
+}
+
 
