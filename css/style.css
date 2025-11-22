@@ -271,14 +271,16 @@ form button:active {
     transform: scale(0.98);
 }
 
-.mes-liens .lien-img {
+.mes-liens .lien-img,
+.mes-doc .lien-doc{
     text-align: center;
     display: flex;
     justify-content: center;
     gap: 5em;
 }
 
-.mes-liens .lien-externe {
+.mes-liens .lien-externe,
+.mes-doc .doc-externe{
     display: inline-block;
     transition: transform 0.3s;
     border-radius: 10px;
@@ -286,12 +288,14 @@ form button:active {
     padding: 5px;
 }
 
-.mes-liens .lien-externe:hover {
+.mes-liens .lien-externe:hover,
+.mes-doc .doc-externe:hover {
     transform: scale(1.1);
     border: 2px solid #3e4a89;
 }
 
-.icone-lien {
+.icone-lien,
+.icone-doc {
     width: 60px; 
     height: 60px;
 }
