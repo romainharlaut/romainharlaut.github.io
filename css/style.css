@@ -277,6 +277,7 @@ form button:active {
 .mes-doc .lien-doc {
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5em;
 }
