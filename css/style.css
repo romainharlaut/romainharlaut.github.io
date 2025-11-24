@@ -87,10 +87,12 @@ footer {
 }
 
 .visuel-projet img.image-sae {
-    max-width: 100%;
-    height: auto;
+    height: 250px; 
+    width: auto;         
+    object-fit: contain; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    cursor: pointer;
 }
 
 .visuel-projet figcaption {
@@ -473,5 +475,25 @@ form button:active {
     .submenu {
         position: relative;
     }
+
+    .visuel-projet img.image-sae {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox img {
+    width: auto;
+    height: auto;
+    display: block;
 }
 
