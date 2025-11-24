@@ -70,7 +70,7 @@ footer {
     color: #fff;
     background-color: #3e4a89;
     padding: 0.5em 1em;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 0.9em;
 }
 
@@ -198,7 +198,7 @@ footer {
     color: #2b3a67;
     text-decoration: none;
     padding: 0.5em 1em;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 form {
@@ -233,7 +233,7 @@ form textarea {
     width: 100%;
     padding: 0.8em;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1em;
     font-family: inherit;
     box-sizing: border-box;
@@ -260,7 +260,7 @@ form button {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -338,7 +338,7 @@ form button:active {
 }
 
 .skill-item:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
 }
 
@@ -397,7 +397,7 @@ form button:active {
 .competence-tech li:hover,
 .competence-nontech li:hover,
 .lien-projet p:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
 }
 
@@ -405,7 +405,7 @@ form button:active {
     width: 300px;
     background: #ffffff;
     padding: 1.5em;
-    border-radius: 12px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -436,7 +436,7 @@ form button:active {
     display: block;
     margin: 0.4em auto;
     padding: 0.6em 1em;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
     color: white;
     background-color: #3e4a89;
@@ -448,6 +448,17 @@ form button:active {
 .project-card a:hover {
     background-color: #5c6cb0;
     border-color: #5c6cb0;
+}
+
+.project-image {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
 }
 
 @media (max-width: 768px) {
