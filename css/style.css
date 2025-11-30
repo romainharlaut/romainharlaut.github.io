@@ -96,10 +96,11 @@ footer {
     cursor: pointer;
 }
 
-.visuel-projet figcaption {
+figcaption {
     margin-top: 0.5em;
     font-style: italic;
     color: #555;
+    text-align: center;
 }
 
 .menu {
@@ -496,5 +497,53 @@ form button:active {
     width: auto;
     height: auto;
     display: block;
+}
+
+.btn-toggle {
+    background-color: #2b3a67;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+.btn-toggle:hover {
+    opacity: 0.85;
+}
+
+.info_cursus {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    background: #f5f7fa;
+    padding: 0 10px;
+    border-left: 3px solid #2b3a67;
+    margin-top: 10px;
+}
+
+.info_cursus.open {
+    padding: 10px;
+}
+
+.image-cursus {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+}
+
+.but ul,
+.lycee ul {
+    padding-left: 1.2em;
+}
+
+.but li,
+.lycee li {
+    margin-bottom: 0.6em;
 }
 
