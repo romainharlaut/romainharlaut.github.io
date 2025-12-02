@@ -16,12 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_2cyfkjs", "template_i5r735q", form)
+    emailjs
+      .sendForm("service_2cyfkjs", "template_i5r735q", form)
       .then(() => {
         alert("✅ Message envoyé avec succès !");
         form.reset();
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("❌ Erreur :", error);
         alert("Erreur : " + JSON.stringify(error));
       });
