@@ -1,34 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Romain HARLAUT</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="assets/img/rh.png">
-    <!-- ✔ TarteAuCitron -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/img/rh.png" />
+
     <script src="js/tarteaucitron.js"></script>
     <script src="js/cookies.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Site de Romain HARLAUT</h1>
-        <p>BUT Informatique</p>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="index.html" class="menu-item">Accueil</a></li>
-                <li><a href="html/cursus/cursus.html" class="menu-item">Cursus</a></li>
-                <li><a href="html/competence/competence.html" class="menu-item">Compétences</a></li>
-                <li><a href="html/portfolio/portfolio.html" class="menu-item">Portfolio</a></li>
-                <li><a href="html/contact/conctact.html" class="menu-item">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Site de Romain HARLAUT</h1>
+      <p>BUT Informatique</p>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="index.html" class="menu-item">Accueil</a></li>
+          <li>
+            <a href="html/cursus/cursus.html" class="menu-item">Cursus</a>
+          </li>
+          <li>
+            <a href="html/competence/competence.html" class="menu-item"
+              >Compétences</a
+            >
+          </li>
+          <li>
+            <a href="html/portfolio/portfolio.html" class="menu-item"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="html/contact/conctact.html" class="menu-item">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="intro">
+      <section class="intro">
             <h2>Bonjour</h2>
             <div class="intro-container">
                 <p>Je suis <strong>Romain HARLAUT</strong>, étudiant en deuxième année du BUT informatique à
@@ -37,47 +48,182 @@
             </div>
         </section>
 
+      <section class="highlight">
+        <h2>Projets vedettes</h2>
+        <div class="projets-container">
+          <div class="project-card">
+            <h3>MathQuest (Saé 1.02)</h3>
+            <img
+              src="assets/img/sae/sae1_02.jpg"
+              alt="Écran de démarrage de MathQuest"
+              class="project-image"
+            />
+            <p>Jeu éducatif mêlant aventure et calcul mental.</p>
+            <a
+              href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae-1.02.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae1_02.html">Voir le portfolio</a>
+          </div>
 
-        <section class="highlight">
-            <h2>Projets vedettes</h2>
-            <div class="projets-container">
-                <div class="project-card">
-                    <h3>MathQuest</h3>
-                    <img src="assets/img/sae/sae1_02.jpg" alt="Écran de démarrage de MathQuest" class="project-image">
-                    <p>Jeu éducatif mêlant aventure et calcul mental.</p>
-                    <a href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae-1.02.git" target="_blank">Voir le dépôt
-                        du projet</a>
-                    <a href="html/portfolio/sae1_02.html">Voir le portfolio
-                        du projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>Linguistud’</h3>
-                    <img src="assets/img/sae/sae2_02.jpg" alt="Page d'accueil de Linguistud’" class="project-image">
-                    <p>Application pour l'appariement d’adolescents participant à des séjours linguistiques.</p>
-                    <a href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae201-201.git" target="_blank">Voir le
-                        dépôt
-                        du projet</a>
-                    <a href="html/portfolio/sae2_02.html">Voir le portfolio
-                        du projet</a>
-                </div>
+          <div class="project-card">
+            <h3>Installation d’une machine virtuelle (Saé 1.03 + 2.03)</h3>
+            <img
+              src="assets/img/sae/sae1_03_2_03.jpg"
+              alt="Installation Debian 12"
+              class="project-image"
+            />
+            <p>
+              Installation et configuration d’un poste Debian via VirtualBox,
+              initiation aux services réseau.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/axel.drelon.etu/sae2.3_axroev.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae1_03.html">Voir le portfolio</a>
+          </div>
 
-                <div class="project-card">
-                    <h3>DomOS</h3>
-                    <img src="assets/img/sae/sae2_05.jpg"
-                        alt="Logo de DomOS, application de gestion domotique centralisée" class="project-image">
-                    <p>Application mobile domotique centralisée pour la gestion de la maison.</p>
-                    <a href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae2.05.git" target="_blank">Voir le dépôt
-                        du projet</a>
-                    <a href="html/portfolio/sae2_05.html">Voir le portfolio
-                        du projet</a>
-                </div>
-            </div>
-        </section>
+          <div class="project-card">
+            <h3>Bases de données (Saé 1.04 + 2.04)</h3>
+            <img
+              src="assets/img/sae/sae1_04_2_04.jpg"
+              alt="Requêtes SQL sur PostgreSQL"
+              class="project-image"
+            />
+            <p>
+              Modélisation, création et exploitation de bases de données
+              relationnelles avec SQL et PostgreSQL.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae1.04.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae1_04.html">Voir le portfolio</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Plateforme de covoiturage en ligne (Saé 1.05-1.06)</h3>
+            <img
+              src="assets/img/sae/sae1_05-1_06.jpg"
+              alt="Page d'accueil covoiturage"
+              class="project-image"
+            />
+            <p>
+              Service web pour partager des trajets et gérer les réservations.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae10506.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae1_05.html">Voir le portfolio</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Exploration algorithmique (Saé 2.02)</h3>
+            <img
+              src="assets/img/sae/sae2_02.jpg"
+              alt="Interface Linguistud’"
+              class="project-image"
+            />
+            <p>
+              Outil d’aide à la décision pour l’appariement optimal
+              d’adolescents en séjours linguistiques.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/sae2.01-2.02/2025/A1.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae2_02.html">Voir le portfolio</a>
+          </div>
+
+          <div class="project-card">
+            <h3>DomOS (Saé 2.05)</h3>
+            <img
+              src="assets/img/sae/sae2_05.jpg"
+              alt="Logo DomOS"
+              class="project-image"
+            />
+            <p>
+              Application mobile domotique centralisée pour la gestion de la
+              maison.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae2.05.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae2_05.html">Voir le portfolio</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Travail en équipe (Saé 2.06)</h3>
+            <img
+              src="assets/img/sae/sae2_06.jpg"
+              alt="Vidéo pédagogique équipe"
+              class="project-image"
+            />
+            <p>
+              Projet de vulgarisation informatique en équipe, création d’une
+              vidéo pédagogique sur les supports de stockage.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae2.06.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae2_06.html">Voir le portfolio</a>
+          </div>
+
+          <div class="project-card">
+            <h3>InfoPoly (Saé 3.01)</h3>
+            <img
+              src="assets/img/sae/sae3_01.jpg"
+              alt="Plateau InfoPoly"
+              class="project-image"
+            />
+            <p>
+              InfoPoly est un jeu inspiré du Monopoly où les joueurs incarnent
+              des étudiants de l’IUT.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae3.01.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae3_01.html">Voir le portfolio</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Modulab (Saé 3.02)</h3>
+            <img
+              src="assets/img/sae/sae3_02.jpg"
+              alt="Logo Modulab"
+              class="project-image"
+            />
+            <p>
+              Modulab est une application de jeu de labyrinthe proposant
+              différents modes de jeu.
+            </p>
+            <a
+              href="https://gitlab.univ-lille.fr/romain.harlaut.etu/sae3.02.git"
+              target="_blank"
+              >Voir le dépôt</a
+            >
+            <a href="html/portfolio/sae3_02.html">Voir le portfolio</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2025 – Romain HARLAUT</p>
+      <p>© 2025 – Romain HARLAUT</p>
     </footer>
-</body>
-
+    <script src="js/vedette.js"></script>
+  </body>
 </html>
