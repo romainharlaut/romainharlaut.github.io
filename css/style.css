@@ -590,7 +590,7 @@ form button:active {
     margin-top: 2em;
 }
 
-.competence-mail a {
+.mail a {
     display: inline-block;
     padding: 5px;
     border-radius: 10px;
@@ -601,7 +601,7 @@ form button:active {
     background-color: #f9f9ff;
 }
 
-.competence-mail a:hover {
+.mail a:hover {
     transform: scale(1.1);
     border-color: #3e4a89;
     background-color: #e8ebf8;
